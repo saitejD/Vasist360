@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+}
+
+body {
+    background-image: url(./Untitled\ design.png);
+    background-Size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.body, .body1, .discription, .KnowMore {
+    animation: moveright .5s linear 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.container1 {
+    margin: auto;
+    padding: 0 0 2em;
+}
+
+.container1::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+.container1::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.container1::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+.container1::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.navbar {
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.5em 2em;
+}
+
+.left img {
+    height: 50px;
+}
+
+.center {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1.2em;
+}
+
+.center a {
+    position: relative;
+    cursor: pointer;
+}
+
+.center a::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(199, 57, 57);
+    height: 2px;
+    width: 0;
+    bottom: -0.4em;
+    left: 0%;
+    transition: 0.3s all ease;
+}
+
+.center a:hover::after {
+    width: 100%;
+}
+
+.center a.active::after {
+    width: 100%;
+}
+
+.right button {
+    background: rgb(218, 177, 42);
+    border: 1px solid rgb(218, 177, 42);
+    padding: 7px 30px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.right button:hover {
+    background-color: #fff;
+    color: #00bfa6;
+    font-weight: 500;
+}
+
+.body {
+    margin-top: 16em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10em;
+}
+
+.body1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10em;
+}
+
+.heading {
+    margin-left: -35%;
+    font-weight: 600;
+    font-size: 4em;
+}
+
+.discription {
+    margin-left: 5%;
+    margin-top: 1em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.content button {
+    margin-top: 1.5em;
+    background-color: #00bfa6;
+    padding: 10px 45px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.KnowMore button {
+    background: rgb(218, 177, 42);
+    border: 1px solid rgb(218, 177, 42);
+    padding: 7px 30px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    margin-top: 50px;
+    margin-left: 20%;
+
+}
+
+.KnowMore button:hover {
+    background-color: #fff;
+    color: #00bfa6;
+    font-weight: 500;
+}
+
+
+.image img {
+    margin-top: -25em;
+    margin-left: 55em;
+    height: 600px;
+    opacity: .8;
+}
+
+.teaching {
+    height: 500px;
+    
+}
+.teaching.appear {
+    opacity: 1;
+}
+
+.teachingh1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: -400px;
+    margin-left: 55%;
+}
+
+.teachingp {
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 55%;
+    margin-right: 3%;
+}
+
+.rectangle {
+    height: 900px;
+    margin-top: 350px;
+    margin-bottom: 100px;
+}
+
+.tutorlogo {
+    height: 600px;
+    margin-top: 170px;
+    margin-left: -300px;
+}
+
+.container3 {
+    margin-top: -50%;
+    margin-right: 50%;
+}
+
+.tutor1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 10%;
+    padding-top: 3%;
+}
+
+.tutor {
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 10%;
+}
+
+.OurBooks {
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 8em;
+    margin-left: 40%;
+}
+
+.BookImage {
+    height: 300px;
+    margin-top: 6%;
+    margin-left: 15%;
+    margin-bottom: 150px;
+}
+.BookImagel.appear, .BookImager.appear {
+    transform: translateX(0);
+}
+.BookImagel, .BookImager {
+    transition: tranform 400ms ease-in;
+}
+.random {
+    background-image: url(./lastpage.png);
+    background-Size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 203vh;
+}
+
+.randomText {
+    margin-top: -42%;
+    margin-left: 24%;
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.support {
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 90px;
+    margin-left: 40%;
+    color: #000;
+}
+
+.phone {
+    font-weight: 500;
+    font-size: 28px;
+    margin-left: 42%;
+    color: #000;
+}
+
+.address {
+    margin-left: 44%;
+    font-weight: 500;
+    font-size: 22px;
+    color: #000;
+}
+
+.address1 {
+    margin-left: 44%;
+    font-weight: 500;
+    font-size: 22px;
+    color: #000;
+}
+
+
+.images {
+    margin-left: 10px;
+    margin-top: 20%;
+    height: 50px;
+}
+
+/*------------------------------MOBILE VIEW----------------------------------*/
+
+@media only screen and (max-width: 992px) {
+    .container1 {
+        height: 100%;
+        width: 100%;
+
+        padding: 0 0 1em;
+    }
+
+    .KnowMore {
+        margin-left: 50px;
+
+    }
+
+    .discription {
+        margin-top: -2em;
+        margin-left: 4px;
+    }
+
+    .teaching {
+        height: 170px;
+        margin-left: 100px;
+        margin-top: 400px;
+        margin-bottom: 600px;
+    }
+
+    .teachingh1 {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    .teachingp {
+        font-size: 15px;
+        margin-left: 15px;
+    }
+
+    .rectangle {
+        height: 300px;
+        margin-top: 150px;
+    }
+
+    .tutorlogo {
+        height: 150px;
+        margin-top: -52em;
+        margin-left: 130px;
+    }
+
+    .container3 {
+        margin-right: 0px;
+    }
+
+    .tutor1 {
+        margin-top: -14em;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .tutor {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .OurBooks {
+        margin-left: 40%;
+        margin-top: 10%;
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    .BookImage {
+        margin-left: 20%;
+        margin-top: 0px;
+    }
+
+    .random {
+        background-image: url(./mobilerandom.png);
+        background-Size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .randomText {
+        margin-top: -20em;
+        margin-left: 25px;
+        font-size: 35px;
+        font-weight: 900;
+        color: #000;
+    }
+
+    .support {
+        font-weight: 800;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left: 17%;
+        color: #000;
+    }
+
+    .phone {
+        font-weight: 700;
+        font-size: 18px;
+        margin-left: 25%;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    .address {
+        margin-left: 30%;
+        font-weight: 600;
+        font-size: 15px;
+        color: #000;
+    }
+
+    .images {
+        margin-left: 30px;
+        margin-top: 23%;
+        height: 30px;
+    }
+
+
+    .navbar {
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+
+    .center,
+    .right {
+        margin-top: 1.5em;
+    }
+
+    .body {
+        margin-top: 0;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 0 1em;
+    }
+
+    .image img {
+        display: none;
+    }
+
+    body {
+        background-image: url(./mobilemode.png);
+        background-Size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+    }
+}

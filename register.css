@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+}
+
+body{
+    background-image: url("./26PUNPa.jpg");
+}
+
+.container{
+    color: #fff;
+    margin: 100px;important:  !important;
+}
+
+.email{
+    margin-top: -10px;
+}
+
+.name,
+.email,
+.mobile,
+.checkbox,
+.signin{
+    
+    padding: 10px;
+}
+
+.container1 {
+    margin: auto;
+    padding: 0 0 2em;
+    box-shadow: rgb(199, 57, 57);
+}
+
+.container1::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+.container1::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.container1::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+.container1::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.5em 2em;
+}
+
+.left img {
+    height: 50px;
+}
+
+.center {
+    margin-right: 30%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1.2em;
+}
+
+.center a {
+    position: relative;
+    cursor: pointer;
+}
+
+.center a::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(199, 57, 57);
+    height: 2px;
+    width: 0;
+    bottom: -0.4em;
+    left: 0%;
+    transition: 0.3s all ease;
+}
+
+.center a:hover::after {
+    width: 100%;
+}
+
+.center a.active::after {
+    width: 100%;
+}
+

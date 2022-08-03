@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="./images/Logo.jpg" type="image/x-icon">
+    <title>Vasista 360</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container1">
+            <div class="navbar">
+                <div class="left">
+                    <img src="./IMG-20220707-WA0006.jpg" alt="Code Grind Logo" />
+                </div>
+                <div class="center">
+                    <a>Home</a>
+                    <a>About us</a>
+                    <a>Shop</a>
+                    <a>Support</a>
+                    <a>Contact us</a>
+                </div>
+                <div class="right">
+                    <button type="button">Join Us</button>
+                </div>
+            </div>
+    </nav>
+    <div class="body">
+        <h1 class="heading">Study</h1>
+    </div>
+    <div class="body1">
+        <h1 class="heading">With Us</h1>
+    </div>
+
+    <h4 class="discription">Learn english easily on one click from <br>your house.</h4>
+    <div class="KnowMore">
+        <button type="button">Know More</button>
+    </div>
+    <div class="image">
+        <img src="Group.png" alt="Right Image" />
+    </div>
+    </div>
+    <img class="teaching fade-in appear" src="./images/6461.jpg" alt="Teaching Image" />
+    <div class="container2">
+        <h1 class="teachingh1">WHAT DO WE DO?</h1>
+        <p class="teachingp">Vashista 360° is an educational channel which focuses mainly on english, polity, economy, history, current affairs, science and technology topics. The main aim of this channel is to teach spoken english through telugu and other subjects related to competitive exams through free online youtube videos, I have vast experience in teaching field. 
+            My aim is to teach the most underprivileged rural folk. Who are not able to afford expensive coaching fee.</p>
+    </div>
+    <img class="rectangle" src="./images/Rectangle2.png" alt="Rectangle" />
+    <img class="tutorlogo" src="./images/tutorlogo.png" alt="Tutor Logo" />
+    <div class="container3">
+        <h1 class="tutor1">MEET YOUR TUTOR</h1>
+        <p class="tutor">My name is vashista, I teach spoken english and communication skills through a youtube channel Vashista 360, which has more than 1 million subscribers. My aim is to provide afforfable education to the rural folk who can't afford coaching fee. 
+            I have 12 years of teaching experience. Democratization of education is the ultimate goal of vashista 360.</p>
+    </div>
+
+    <h1 class="OurBooks">OUR BOOKS</h1>
+    <div class="container4">
+        <a href="https://amzn.to/3atcRGy" target="_blank"><img class="BookImage" src="./images/book1.jpg" alt="Book Image"></a>
+        <a href="https://amzn.to/3Oqvr2F" target="_blank"><img class="BookImage" src="./images/book2.jpg" alt="Book Image"></a>
+        <a href="https://amzn.to/3oIbaeN" target="_blank"><img class="BookImage" src="./images/book3.jpg" alt="Book Image"></a>
+    </div>
+
+    <div class="random">
+    </div>
+    <h1 class="randomText">Want to know more about us?</h1>
+    <h3 class="support">support@vasista.com</h3>
+    <h3 class="phone">+91XXXXXXXXXX</h3>
+    <h4 class="address">Koushik Enclave</h4>
+    <h4 class="address">Temple Alwal</h4>
+    <h4 class="address">Secunderabad</h4>
+    <h4 class="address1">India - 500010</h4>
+
+    <a href="#"><img class="images" src="./images/Instagram.jpg" alt="Instagram Logo"></a>
+    <a href="#"><img class="images" src="./images/LinkedIn.jpg" alt="Linkedin Logo"></a>
+    <a href="#"><img class="images" src="./images/Pinterest.jpg" alt="Pinterest Logo"></a>
+    <a href="#"><img class="images" src="./images/Twitter.png" alt="Twitter Logo"></a>
+    <a href="#"><img class="images" src="./images/YouTube.png" alt="YouTube Logo"></a>
+    <a href="#"><img class="images" src="./images/Facebook.png" alt="Facebook Logo"></a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        
+        const faders =document.querySelectorAll('.fade-in');
+        const sliders=document.querySelectorAll('.slide-in')
+
+
+        const appearOptions = {
+            threshold:0,
+            rootMargin:"0px 0px -300px 0px"
+            
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(
+            entries,
+            appearOnScroll
+        ){
+            entries.forEach(entry =>{
+                if(!entry.isIntersecting){
+                    return;
+                } else {
+                    entry.target.classList.add("appear");
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        },appearOptions);
+
+
+        faders.forEach(faders => {
+            appearOnScroll.observe(faders);
+        });
+
+
+        sliders.forEach(slider => {
+            appearOnScroll.observe(slider);
+        });
+
+    </script>
+</body>
+
+</html>
